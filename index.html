@@ -5,7 +5,9 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="width,initial-scale=1, maximum-scale=1">
 <meta charset="utf-8">
-  <script src="js/jquery-1.10.2.js">
+<script src = "js/jquery-3.5.1.js"></script>
+  <script src = "js/script.js"></script>
+
 
   </script>
      <title>delani studio</title>
@@ -17,7 +19,7 @@
      .header{
        padding: 80px;
        text-align: center;
-       background-image: url('h_img.jpg');
+       background-image: url('images/h_img.jpg');
 
 
      }
@@ -77,7 +79,11 @@
 
        <h1>WELCOME</br></br> TO DELANI STUDIO</h1>
        <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGNS IN A FUN ENVIRONMENT</p>
+       <p>
+       <a href="#WHAT WE DO">
        <img src="mouse_click.png" alt="mouse" class="responsive ">
+     </a>
+   </p>
      </div>
 
      <div class="row">
@@ -114,9 +120,10 @@ based on your requirements, we can provide a complete offering or just the piece
       <h3>WHAT WE DO</h3>
     </div>
   <div class="column">
-    <img src="design_icon.png" alt="DESIGN"  style="width: 30%">
+    <div class="hovereffect">
+     <img class="img-responsive" src="images/design_icon.png" alt="DESIGN"  style="width: 30%">
     <p>DESIGN</p></br>
-  </div>
+  </div></div>
   <div class="column">
     <img src="dev_icon.png" alt="DEVELOPMENT"  style="width: 30%">
     <p>DEVELOPMENT</p>
@@ -141,8 +148,8 @@ based on your requirements, we can provide a complete offering or just the piece
         </a>
         <a href="" class="img">
           <div class="middle">
-            <div class="text">delani</div></div>
-            <img src="work2.jpg" alt="work2" class="image"/>
+
+            <img src="work2.jpg" alt="work2" class="image/>
 
             <h4></h4>
         </a>
@@ -150,7 +157,9 @@ based on your requirements, we can provide a complete offering or just the piece
             <img src="work1.jpg" alt="work1"/>
             <h4></h4>
         </a>
-    </div>
+    </div></div></br></br>
+
+    <div class="images">
     <div class="row">
         <a href="" class="img">
             <img src="work8.jpg" alt="work8"/>
@@ -217,10 +226,9 @@ based on your requirements, we can provide a complete offering or just the piece
 
   </form>
   <textarea rows="6" cols="60" name="comment" form="usrform">Enter text here...</textarea></br></br>
-<button type="button" onClick="loadDoc()">reload</button>
-
-
-  <input type="button" value="submit" onClick="refresh">
+  <form onsubmit="return clearInput()">
+    <input class="clear" type="Submit" value="submit">
+  </form>
 </div></div>
 
 <div class="tm-col-footer">
